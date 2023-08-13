@@ -1,0 +1,20 @@
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+public class ResolucaoTela {
+    
+    public static void main(String[] args) {
+        // Obtém a instância do Toolkit
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        
+        // Obtém a dimensão da tela
+        Dimension dimensaoTela = toolkit.getScreenSize();
+        
+        // Obtém a largura e altura da tela
+        int largura = dimensaoTela.width;
+        int altura = dimensaoTela.height;
+
+        // Exibe a resolução na tela
+        System.out.println("A resolução da tela é: " + largura + " x " + altura);
+    }
+}
